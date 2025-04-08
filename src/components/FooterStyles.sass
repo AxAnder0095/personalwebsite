@@ -1,3 +1,10 @@
+$mobile-screen: 600px
+$tablet: 767px
+$small-screen: 1024px
+$desktop: 1200px
+$large-desktop: 1400px
+
+
 .footer-container
   height: 8rem
   color: white
@@ -6,6 +13,69 @@
   justify-content: center
 
 .footer-container .footer-wrapper
-  border: 1px solid white
   width: 1400px
   height: 100%
+  display: flex
+  justify-content: center
+
+
+.footer-container .footer-wrapper .footer-left
+  width: 20%
+  display: flex
+  flex-direction: column
+
+.footer-container .footer-wrapper .footer-left .footer-link
+  text-decoration: none
+  margin-top: 0.3rem
+  color: white
+  width: 20%
+  border-bottom: 2px solid black
+
+  &:hover
+    color: white
+    border-bottom: 2px solid white
+
+.footer-container .footer-wrapper .footer-right
+  //border: 1px solid white
+  width: 20%
+
+.footer-container .footer-wrapper .footer-right .contact-info
+  margin-top: 0.3rem
+  margin-bottom: 0
+
+.footer-title
+  background-image: linear-gradient(90deg, #62127A, #7C0EE3, #458562)
+  background-clip: text
+  -webkit-text-fill-color: transparent
+
+
+@media (max-width: $large-desktop)
+  .footer-container .footer-wrapper
+    width: $desktop
+
+
+@media (max-width: $desktop)
+  .footer-container .footer-wrapper
+    width: $small-screen
+
+
+@media (max-width: $small-screen)
+  .footer-container .footer-wrapper
+    width: $tablet
+
+  .footer-container .footer-wrapper .footer-right
+    width: 30%
+
+  .footer-container .footer-wrapper .footer-left
+    width: 30%
+
+
+@media (max-width: $tablet)
+  .footer-container .footer-wrapper .footer-right
+    width: 45%
+
+  .footer-container .footer-wrapper .footer-left
+    width: 45%
+
+
+@media (max-width: $mobile-screen)

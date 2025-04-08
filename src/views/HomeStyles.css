@@ -80,7 +80,6 @@
 
 .projects {
   background-color: black;
-  color: #5938ff;
   grid-row: 6/11;
   grid-column: 7/13;
   animation: rightSlide 2s ease-in-out;

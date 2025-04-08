@@ -13,7 +13,6 @@ function Navbar() {
             if (window.innerWidth > 767){
                 setShowLinks(false);
             }
-            console.log(window.innerWidth)
         }
 
         window.addEventListener('resize', handleResize);
