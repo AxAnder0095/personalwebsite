@@ -1,0 +1,20 @@
+.custom-link-wrapper {
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+}
+
+.custom-link {
+  border: 1px solid white;
+  border-radius: 10px;
+  text-decoration: none;
+  height: 100%;
+  width: 50%;
+  vertical-align: center;
+  line-height: 50px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*# sourceMappingURL=CustomLinkButtonStyles.css.map */

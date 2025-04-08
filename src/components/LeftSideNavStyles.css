@@ -1,0 +1,49 @@
+.left-title-wrapper {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding-right: 5rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.left-title {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.personal-links {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.per-link {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  padding: 5px 0;
+}
+.per-link:hover {
+  text-decoration: underline cornflowerblue;
+  color: cornflowerblue;
+}
+
+.more-about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-link {
+  padding: 5px 0;
+  text-decoration: none;
+  color: deeppink;
+}
+.about-link:hover {
+  color: lightpink;
+  text-decoration: underline lightpink;
+}
+
+/*# sourceMappingURL=LeftSideNavStyles.css.map */

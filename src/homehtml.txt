@@ -1,0 +1,190 @@
+<div className={'home-left-side'}>
+
+                {/*Intro Container*/}
+                <div className={'intro-container'}>
+                    <div className={'home-inner-left-side'}>
+                        <h2>Hello, i'm</h2>
+                        <p className={'home-name mt-4'}>Alexander Brown</p>
+                        <p className={'mt-4'}>I'm a aspiring software developer and a recent graduate from Aurora
+                            University.
+                            I have graduated with Bachelor's in Computer Science and a Associates in
+                            Applied Sciences.
+                        </p>
+                        <p>
+                            Some things I like to do on my free time is weight training, play games
+                            and learn new recipes to cook my own home made meals. Steak
+                            & fries is my new favorite.
+                        </p>
+                    </div>
+                    <div className={'home-inner-right-side'}>
+                        <div className={'animation-container'}>
+                            <div id={'pen-ani'}>{SkillIcons.PenIcon}</div>
+                        </div>
+                    </div>
+                </div>
+
+                {/*About container*/}
+                <div className={'about-container mt-5'} id={'aboutID'}>
+                    <div className={'about-flex d-flex'}>
+                        <div className={'home-inner-left-side'}>
+                            <h2 className={'home-about'}>About Me</h2>
+                            <p className={'mt-4'}>
+                                Software development is a field of study i've been interested since I was young.
+                                Starting with gaming as a hobby with the original Xbox, eventually led me into talks
+                                with my friends about becoming game developers. While my new interests are more tailored
+                                towards full stack engineering, I still always wanted to become a programmer since I first
+                                starting gaming as a hobby. Some of my favorite things to do are
+                            </p>
+                        </div>
+                        <div className={'home-inner-right-side'}>
+                            <div className={'animation-container'}>
+                                <div id={'emoji'}>{SkillIcons.SunGlassIcon}</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={'about-flex d-flex'}>
+                        <div className={'home-inner-left-side'}>
+                            <h5 className={'home-gaming'}>Gaming</h5>
+                            <p className={'mt-4'}>
+                                Currently I play on PC nowadays. I'm someone that usually hops from game to game but
+                                recently
+                                i've took up Marvel Rivals and Stardew Valley. Complete polar opposite games but I enjoy
+                                nonetheless.
+                                <br/> <br/>
+                            </p>
+
+                        </div>
+                        <div className={'home-inner-right-side'}>
+                            <div className={'animation-container'}>
+                                <div id={'jolt-icon'}>{SkillIcons.GJoltIcon}</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={'about-flex d-flex'}>
+                        <div className={'home-inner-left-side'}>
+                            <h5 className={'home-fitness'}>Fitness</h5>
+                            <p className={'mt-4'}>
+                                Two areas of exercise I love to do are cardio and weight training, weight training being
+                                my favorite of the two. I used to hate working out until I decided to make a grave change
+                                to my physical and emotional well being all the way back in 2018. After many ups and downs
+                                trying to lose weight and eat healthier throughout the years, I am now down 92 lbs and
+                                love cooking my own meals at home, which brings me to my next activity I love to do.
+                            </p>
+                        </div>
+                        <div className={'home-inner-right-side'}>
+                            <div className={'animation-container'}>
+                                <div id={'weight'}>{SkillIcons.FitnessIcon}</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={'about-flex d-flex'}>
+                        <div className={'home-inner-left-side'}>
+                            <h5 className={'home-cooking'}>Cooking</h5>
+                            <p className={'mt-4'}>
+                                Cooking is my second favorite hobby. I used to cook alot when I was younger and I feel
+                                i've gotten better at it through the years. My favorite dish to make is a
+                                Chicken Quesadilla.
+                            </p>
+                        </div>
+                        <div className={'home-inner-right-side'}>
+                            <div className={'animation-container'}>
+                                <div id={'pot'}>{SkillIcons.CookingIcon}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/*Skills Container*/}
+                <div className={'skills-container mt-5 pb-3'} id={'skillID'}>
+                    <div className={'skills-flex d-flex'}>
+                        <div className={'home-inner-left-side'}>
+                            <h2 className={'home-skills'}>Skills</h2>
+                            <div className={'skills mt-3'}>
+                                <div className={'skill'}>
+                                    <div>
+                                        {SkillIcons.ReactIcon}
+                                        <p className={'skill-desc text-center'}>React.js</p>
+                                    </div>
+                                </div>
+                                <div className={'skill'}>
+                                    <div>
+                                        {SkillIcons.JSIcon}
+                                        <p className={'skill-desc text-center'}>Javascript</p>
+                                    </div>
+                                </div>
+                                <div className={'skill'}>
+                                    <div>
+                                        {SkillIcons.HTMLIcon}
+                                        <p className={'skill-desc text-center'}>HTML</p>
+                                    </div>
+                                </div>
+                                <div className={'skill'}>
+                                    <div>
+                                        {SkillIcons.CSSIcon}
+                                        <p className={'skill-desc text-center'}>CSS</p>
+                                    </div>
+                                </div>
+                                <div className={'skill'}>
+                                    <div>
+                                        {SkillIcons.PyIcon}
+                                        <p className={'skill-desc text-center'}>Python</p>
+                                    </div>
+                                </div>
+                                <div className={'skill'}>
+                                    <div>
+                                        {SkillIcons.CSIcon}
+                                        <p className={'skill-desc text-center'}>CSharp</p>
+                                    </div>
+                                </div>
+                                <div className={'skill'}>
+                                    <div>
+                                        {SkillIcons.JavaIcon}
+                                        <p className={'skill-desc text-center'}>Java</p>
+                                    </div>
+                                </div>
+                                <div className={'skill'}>
+                                    <div>
+                                        {SkillIcons.SqlIcon}
+                                        <p className={'skill-desc text-center'}>MySql</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={'home-inner-right-side'}>
+                            <div className={'animation-container'}>
+                                <div id={'gear-ani'}>{SkillIcons.GearIcon}</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                {/*Education Container*/}
+                <div className={'education-container mt-5'} id={'educationID'}>
+                    <div className={'education-flex d-flex'}>
+                        <div className={'home-inner-left-side'}>
+                            <h2 className={'home-education'}>Education</h2>
+                            <h4 className={'mt-4'}>Aurora University</h4>
+                            <p className={'mx-0'}>Degree: Bachelor's</p>
+                            <p className={'mx-0'}>Field of Study: Computer Science</p>
+                            <p className={'mx-0'}>Main Classes: Object Oriented, Data Structures, Software Testing <br/>
+                                Capstone and Databases</p>
+                            <h4>Waubonsee Community College</h4>
+                            <p className={'mx-0'}>Degree: Associates</p>
+                            <p className={'mx-0'}>Field of study: Applied Sciences</p>
+                            <p className={'mx-0'}>Main Classes: Intro to Programming, Intro to Web Development, C++</p>
+                        </div>
+                        <div className={'home-inner-right-side'}>
+                            <div className={'animation-container'}>
+                                <div id={'book'}>{SkillIcons.BookIcon}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </>

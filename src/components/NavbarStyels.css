@@ -1,0 +1,94 @@
+.header-container {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container {
+  position: relative;
+  width: 1400px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-container .navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-container .navbar-links .link {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+}
+
+.nav-container #hidden {
+  right: 0;
+  transition: 500ms ease-out;
+  background-color: black;
+}
+
+.nav-container .collapse-button-container {
+  display: none;
+}
+
+.nav-container .collapse-button-container .collapse-button {
+  border: 1px solid white;
+  padding: 5px 10px;
+  background-color: white;
+  color: black;
+  transition: 500ms ease-out;
+  border-radius: 50px;
+}
+.nav-container .collapse-button-container .collapse-button:hover {
+  background-color: black;
+  transition: 500ms ease-out;
+  color: white;
+}
+
+.nav-container .return-to-home-icon .link {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 1400px) {
+  .nav-container {
+    width: 1200px;
+  }
+}
+@media (max-width: 1200px) {
+  .nav-container {
+    width: 1024px;
+  }
+}
+@media (max-width: 1024px) {
+  .nav-container {
+    width: 767px;
+  }
+}
+@media (max-width: 767px) {
+  .nav-container {
+    width: 600px;
+  }
+  .nav-container .collapse-button-container {
+    display: unset;
+  }
+  .nav-container .navbar-links {
+    position: fixed;
+    flex-direction: column;
+    right: -100%;
+    top: 4rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 4rem;
+    display: flex;
+    transition: 500ms ease-out;
+    z-index: 2;
+  }
+}
+
+/*# sourceMappingURL=NavbarStyels.css.map */

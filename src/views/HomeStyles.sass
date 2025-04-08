@@ -1,0 +1,481 @@
+$mobile-screen: 600px
+$tablet: 767px
+$small-screen: 1024px
+$desktop: 1200px
+$large-desktop: 1400px
+
+.home-container-wrapper
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  //z-index: -999
+
+.main-home-container
+  width: 1400px
+  //border: 1px solid white
+  margin-top: 4rem
+  display: grid
+  grid-template-columns: repeat(12, 1fr)
+  grid-template-rows: repeat(10, 100px)
+  gap: 1rem
+  overflow: hidden
+  //background-color: #212121
+  //z-index: -2
+
+
+
+// =========================================================
+// main grid container styling and animation
+// =========================================================
+.about, .skills, .education, .projects
+  box-sizing: border-box
+  padding: 1rem
+
+.about
+  //background-color: #5938ff
+  background-color: black
+  grid-row: 1 / 6
+  grid-column: 1 / 7
+  animation: leftSlide 1s ease-in-out
+  animation-iteration-count: initial
+  animation-fill-mode: forwards
+  transform: translateX(-100%)
+  z-index: 1
+
+  //box-shadow: inset 0 0 10px white
+
+  @keyframes leftSlide
+    from
+      transform: translateX(-100%)
+
+    to
+      transform: translateX(0)
+
+.skills
+  background-color: #c4c4c4
+  color: black
+  grid-row: 1 / 6
+  grid-column: 7 / 13
+  animation: rightSlide 2s ease-in-out
+  animation-iteration-count: initial
+  animation-fill-mode: forwards
+
+  @keyframes rightSlide
+    from
+      transform: translateX(-200%)
+
+    to
+      transform: translateX(0)
+
+.education
+  //background-color: white
+  background-color: #c4c4c4
+  color: black
+  grid-row: 6 / 11
+  grid-column: 1 / 7
+  animation: leftSlide 1s ease-in-out
+  animation-iteration-count: initial
+  animation-fill-mode: forwards
+  transform: translateX(-100%)
+  z-index: 1
+
+  @keyframes leftSlide
+    from
+      transform: translateX(-100%)
+
+    to
+      transform: translateX(0)
+
+
+.projects
+  background-color: black
+  color: #5938ff
+  grid-row: 6 / 11
+  grid-column: 7 / 13
+
+  animation: rightSlide 2s ease-in-out
+  animation-iteration-count: initial
+  animation-fill-mode: forwards
+  //z-index: -1
+
+  @keyframes rightSlide
+
+    from
+      transform: translateX(-200%)
+      //z-index: -1
+
+    to
+      transform: translateX(0)
+      //z-index: 1
+
+
+//=========================================================
+// inner grid styling for about
+//=========================================================
+
+.about .about-wrapper
+  width: 100%
+  height: 100%
+
+.about .about-wrapper .about-header
+  height: 40%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.about .about-wrapper .about-header .about-header-title
+  font-size: 3.5rem
+  text-align: center
+  background-image: linear-gradient(90deg, #62127A, #7C0EE3, #458562)
+  background-clip: text
+  -webkit-text-fill-color: transparent
+
+
+.about .about-wrapper .about-header .about-header-desc
+  text-align: center
+  background-image: linear-gradient(90deg, #62127A, #7C0EE3, #458562)
+  background-clip: text
+  -webkit-text-fill-color: transparent
+
+.about .about-wrapper .about-body
+  height: 60%
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  //border: 1px solid black
+
+.about .about-wrapper .about-body .about-body-desc
+  width: 100%
+  height: 82%
+  padding: 1rem
+  border-radius: 5px
+  background-image: linear-gradient(90deg, #62127A, #7C0EE3, #458562)
+  background-clip: text
+  -webkit-text-fill-color: transparent
+  //color: #5938ff
+  //border: 1px solid black
+
+
+//=========================================================
+// inner grid styling for education
+//=========================================================
+
+.education .education-wrapper
+  width: 100%
+  height: 100%
+
+.education .education-wrapper .education-header
+  height: 40%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.education .education-wrapper .education-header .education-header-title
+  font-size: 3.5rem
+  text-align: center
+  //background-image: linear-gradient(90deg, #5938ff, black)
+  background-image: linear-gradient(90deg, #62127A, #7C0EE3, #458562)
+  background-clip: text
+  -webkit-text-fill-color: transparent
+
+.education .education-wrapper .education-header .education-header-desc
+  text-align: center
+  background-image: linear-gradient(90deg, #62127A, #7C0EE3, #458562)
+  background-clip: text
+  -webkit-text-fill-color: transparent
+
+.education .education-wrapper .education-body
+  height: 60%
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+
+.education .education-wrapper .education-body .education-body-desc
+  width: 100%
+  height: 82%
+  padding: 1rem
+  display: flex
+  gap: 1rem
+
+  div
+    width: 50%
+    border: 1px solid black
+    box-sizing: border-box
+    padding: .5rem
+    background-color: black
+    color: white
+    border-radius: 5px
+    //padding: 1rem
+
+
+.collage
+  background-image: linear-gradient(90deg, #62127A, #7C0EE3, #458562)
+  background-clip: text
+  -webkit-text-fill-color: transparent
+  margin-bottom: 1rem
+
+.collage-desc
+  font-size: 0.7rem
+  margin: 0
+  line-height: 1.3rem
+
+
+//=========================================================
+// inner grid styling for skills
+//=========================================================
+
+.skills .skills-wrapper
+  width: 100%
+  height: 100%
+
+.skills .skills-wrapper .skills-header
+  height: 40%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.skills .skills-wrapper .skills-header .skills-header-title
+  font-size: 3.5rem
+  text-align: center
+  //background-image: linear-gradient(90deg, #5938ff, black)
+  background-image: linear-gradient(90deg, #62127A, #7C0EE3, #458562)
+  background-clip: text
+  -webkit-text-fill-color: transparent
+
+.skills .skills-wrapper .skills-header .skills-header-desc
+  //background-image: linear-gradient(90deg, #5938ff, black, #5938ff)
+  background-image: linear-gradient(90deg, #62127A, #7C0EE3, #458562)
+  background-clip: text
+  -webkit-text-fill-color: transparent
+
+
+.skills .skills-wrapper .skills-body
+  height: 60%
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+
+
+.skills .skills-wrapper .skills-body .skills-body-top
+  height: 40%
+  display: flex
+  gap: 0.5rem
+
+
+.skills .skills-wrapper .skills-body .skills-body-bottom
+  margin-top: 0.5rem
+  height: 40%
+  display: flex
+  gap: 0.5rem
+
+
+.skills-body-wrapper
+  display: flex
+  flex-direction: column
+  width: 100%
+  align-items: center
+  border-radius: 5px
+  color: white
+  //background-color: #5938ff
+  background-color: black
+
+
+.skills-body-wrapper .skill-icon
+  height: 80%
+  width: 80%
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 3.5rem
+
+
+  //color: brown
+  //color: #7C0EE3
+
+
+
+.skills-body-wrapper .skill-desc
+  margin: 0
+  padding: 0
+  //background-image: linear-gradient(90deg, #62127A, #7C0EE3, #458562)
+  //background-clip: text
+  //-webkit-text-fill-color: transparent
+
+//=========================================================
+// inner grid styling for projects
+//=========================================================
+
+.projects .projects-wrapper
+  width: 100%
+  height: 100%
+
+.projects .projects-wrapper .projects-header
+  //border: 1px solid white
+  height: 40%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.projects .projects-wrapper .projects-header .projects-header-title
+  font-size: 3.5rem
+  text-align: center
+  background-image: linear-gradient(90deg, #62127A, #7C0EE3, #458562)
+  background-clip: text
+  -webkit-text-fill-color: transparent
+
+.projects .projects-wrapper .projects-header .projects-header-desc
+  text-align: center
+  background-image: linear-gradient(90deg, #62127A, #7C0EE3, #458562)
+  background-clip: text
+  -webkit-text-fill-color: transparent
+
+.projects .projects-wrapper .projects-body
+  height: 60%
+  //border: 1px solid white
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  //width: 100%
+  //padding: 1rem
+
+.projects .projects-wrapper .projects-body .projects-body-desc
+  //border: 1px solid white
+  height: 82%
+  display: flex
+  gap: 0.5rem
+  justify-content: center
+
+.projects .projects-wrapper .projects-body .projects-body-desc .pt-wrapper
+  width: 32%
+  //border: 1px solid white
+  background-image: linear-gradient(90deg, #62127A, #7C0EE3, #458562)
+  //background-image: linear-gradient(90deg, #62127A, #7C0EE3, #458562)
+  display: flex
+  //background-color: white
+  justify-content: center
+  align-items: center
+  border-radius: 5px
+
+.projects .projects-wrapper .projects-body .projects-body-desc .pt-wrapper .project
+  background-color: white
+  width: 97%
+  height: 98%
+  border-radius: 5px
+
+  div
+    //border: 1px solid white
+    height: 50%
+
+.project-title
+  margin-top: 1rem
+  text-align: center
+  background-image: linear-gradient(90deg, #62127A, #7C0EE3, #458562)
+  background-clip: text
+  -webkit-text-fill-color: transparent
+
+.project-image
+  border-top-right-radius: 5px
+  border-top-left-radius: 5px
+
+.project-links
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 1rem
+
+.project-link
+  text-decoration: none
+  border: 1px solid black
+  padding: 10px 20px
+  border-radius: 5px
+  color: white
+  background-color: black
+  z-index: 10
+
+  &:hover
+    background-color: white
+    color: black
+
+
+
+
+
+@media (max-width: $large-desktop)
+  .main-home-container
+    width: $desktop
+    grid-template-rows: repeat(10, 90px)
+
+  .project-links
+    gap: 0.3rem
+
+  .project-link
+    text-decoration: none
+    border: 1px solid black
+    padding: 5px 15px
+
+
+@media (max-width: $desktop)
+  .main-home-container
+    width: $small-screen
+    grid-template-rows: repeat(10, 80px)
+
+  .skills-body-wrapper .skill-icon
+    font-size: 2.5rem
+
+  .skills-body-wrapper .skill-desc
+    font-size: 0.7rem
+
+  .project-links
+    flex-direction: column
+
+  .project-link
+    padding: 0 10px
+    width: 50%
+    text-align: center
+
+  .project-title
+    font-size: 0.7rem
+
+
+@media (max-width: $small-screen)
+  .main-home-container
+    width: $tablet
+    grid-template-rows: repeat(12, 70px)
+
+  .project-link
+    padding: 0
+
+
+@media (max-width: $tablet)
+  .main-home-container
+    width: 100%
+    grid-template-columns: unset
+    grid-template-rows: repeat(16, 100px)
+
+  .about
+    grid-row: 1 / 5
+    grid-column: 1 / 3
+
+  .education
+    grid-column: 1 / 3
+    grid-row: 13 / 17
+
+  .skills
+    grid-row: 5 / 9
+    grid-column: 1 / 3
+
+  .projects
+    grid-row: 9 / 13
+    grid-column: 1 / 3
+
+  .skills-body-wrapper .skill-icon
+    font-size: 3rem
+
+  .projects .projects-wrapper .projects-body .projects-body-desc .pt-wrapper
+    width: 28%
+
+
+
+@media (max-width: $mobile-screen)
