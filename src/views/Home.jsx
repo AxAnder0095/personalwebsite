@@ -5,6 +5,7 @@ import WP from '../imgs/weatherapp.png'
 import AN from '../imgs/animations.png'
 import CA from '../imgs/cactpot.png'
 import {Link} from "react-router-dom";
+import Footer from "../components/Footer.jsx";
 
 
 function Home() {
@@ -176,6 +177,7 @@ function Home() {
                     </section>
                 </main>
             </div>
+            <Footer/>
         </>
     )
 }

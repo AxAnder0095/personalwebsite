@@ -28,7 +28,7 @@ function Navbar() {
                         <Link className={'link'} to='/'>balexander310@yahoo.com</Link>
                     </div>
                     <div className={'navbar-links'} id={showLinks ? 'hidden' : ''}>
-                        <Link className={'link'} to='/'>Home</Link>
+                        <Link className={'link'} to='https://animations-feb82.web.app'>Animations</Link>
                         <Link className={'link'} to='https://github.com/AxAnder0095'>Github</Link>
                         <Link className={'link'} to='https://www.linkedin.com/in/alexander-brown-543337216/'>LinkedIn</Link>
                     </div>
