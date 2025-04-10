@@ -1,14 +1,13 @@
 #root {
   font-size: 14px;
   font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
 }
 
 body {
   margin: 0;
   padding: 0;
   /*background-color: #171717;*/
-  background-color: black;
+  background-color: white;
   /*background-color: #dbdbdb;*/
 }
 
