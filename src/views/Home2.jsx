@@ -29,8 +29,8 @@ function Home2() {
                                       <div className={'home2-intro-info'}>
                                           <p className={'first-name'}>ALEXANDER</p>
                                           <p className={'last-name'}>BROWN</p>
-                                          <p>f</p>
-                                          <p>f</p>
+                                          <p>Web Designer</p>
+                                          <p>Web Developer</p>
                                       </div>
                                   </div>
                                   <div className={'home2-intro-image'}>
