@@ -183,7 +183,7 @@ function Home2() {
                                       <Link to={'https://www.linkedin.com/in/alexander-brown-543337216/'} className={'home2-footer-link'}>Linkedin</Link>
                                   </div>
                                   <div className={'right-side-footer'}>
-                                      <h5>Contact</h5>
+                                      <p className={'footer-title'}>Contact</p>
                                       <p className={'home2-footer-contact'}>balexander310@yahoo.com</p>
                                       <p className={'home2-footer-contact'}>1-630-870-5787</p>
                                   </div>
