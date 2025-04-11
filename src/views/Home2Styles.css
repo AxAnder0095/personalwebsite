@@ -44,14 +44,15 @@
   display: flex;
   justify-content: center;
   letter-spacing: 0.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
 }
 
 .home2-nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  position: sticky;
-  top: 0;
 }
 
 .nav-logo {
@@ -71,7 +72,6 @@
 }
 
 .home2-main {
-  background-color: #111111;
   width: 100%;
   height: 100%;
   padding-top: 8rem;
@@ -79,23 +79,11 @@
 
 .home2-intro-section-wrapper {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 0.75rem;
-  row-gap: 0.75rem;
-}
-
-.home2-intro-section {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  border: 1px solid white;
-  letter-spacing: 0.3rem;
-  opacity: 0.7;
-}
-
-.home2-intro-image {
-  display: flex;
-  flex-direction: column;
+  opacity: 0.8;
+  overflow: hidden;
 }
 
 .first-name {
@@ -103,14 +91,214 @@
   margin: 0;
   width: 100%;
   letter-spacing: 0.5rem;
+  font-family: "Krona One", "Inter", Arial, sans-serif;
+  text-align: center;
+  animation: textFadeIn ease-in-out 1s;
+  animation-iteration-count: initial;
+  animation-fill-mode: forwards;
+}
+@keyframes textFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .last-name {
   font-size: 6rem;
   margin: 0;
   -webkit-text-fill-color: #111111;
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 1px #111111;
   letter-spacing: 0.5rem;
+  font-family: "Krona One", "Inter", Arial, sans-serif;
+  text-align: center;
+  animation: textStrokeFill ease-in-out 3s;
+  animation-iteration-count: initial;
+  animation-fill-mode: forwards;
+}
+@keyframes textStrokeFill {
+  from {
+    -webkit-text-stroke: 1px #111111;
+  }
+  to {
+    -webkit-text-stroke: 1px white;
+  }
+}
+
+.sub-text {
+  letter-spacing: 0.2rem;
+  font-family: "Krona One", "Inter", Arial, sans-serif;
+  text-align: center;
+  animation: textFadeIn ease-in-out 1s;
+  animation-iteration-count: initial;
+  animation-fill-mode: forwards;
+}
+@keyframes textFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home2-about-section-wrapper {
+  margin-top: 20rem;
+  display: flex;
+  justify-content: center;
+}
+
+.home2-about-title {
+  font-family: "Krona One", "Inter", Arial, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  opacity: 0.8;
+  letter-spacing: 0.2rem;
+}
+
+.home2-about-desc {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  opacity: 0.8;
+  width: 60%;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.home2-about-desc-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.home2-projects-section-wrapper {
+  margin-top: 20rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.center-projects-container {
+  width: 60%;
+}
+
+.home2-projects-title {
+  font-family: "Krona One", "Inter", Arial, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  opacity: 0.8;
+  letter-spacing: 0.2rem;
+}
+
+.home2-projects-grid {
+  margin-top: 4rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 0.75rem;
+  row-gap: 0.75rem;
+}
+
+.home2-projects-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.home2-projects-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.home2-project-link {
+  display: grid;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.picture-box:hover {
+  opacity: 0.7;
+}
+
+.home2-project-title {
+  opacity: 0.5;
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.home2-project-desc {
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+}
+
+.home2-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.home2-footer-content {
+  width: 50%;
+  display: flex;
+  margin: 5rem 0;
+}
+.home2-footer-content div {
+  width: 50%;
+}
+
+.left-side-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-side-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.home2-footer-link {
+  text-decoration: none;
+  color: white;
+  opacity: 0.7;
+  margin-bottom: 0.2rem;
+}
+.home2-footer-link:hover {
+  opacity: 1;
+}
+
+.home2-footer-contact {
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+}
+
+@media (max-width: 1024px) {
+  .first-name {
+    font-size: 4rem;
+  }
+  .last-name {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  .home2-projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .first-name {
+    font-size: 3rem;
+  }
+  .last-name {
+    font-size: 3rem;
+  }
+  .home2-footer-content {
+    width: 70%;
+  }
+  .home2-nav {
+    font-size: 0.7rem;
+  }
 }
 
 /*# sourceMappingURL=Home2Styles.css.map */
