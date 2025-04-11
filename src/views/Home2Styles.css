@@ -71,6 +71,23 @@
   gap: 2rem;
 }
 
+#hidden {
+  right: 0;
+  transition: 500ms ease-out;
+  background-color: #111111;
+}
+
+.collapse-button-container {
+  display: none;
+}
+
+.collapse-button {
+  border: none;
+  background-color: #111111;
+  color: white;
+  font-size: 2rem;
+}
+
 .home2-main {
   width: 100%;
   height: 100%;
@@ -165,12 +182,49 @@
   width: 60%;
   padding: 2rem;
   border-radius: 10px;
+  text-align: center;
 }
 
 .home2-about-desc-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.home2-about-skills {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.home2-about-skills-wrapper {
+  width: 60%;
+}
+
+.home2-about-all-skills {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-column-gap: 0.75rem;
+  width: 100%;
+  opacity: 0.8;
+}
+.home2-about-all-skills div {
+  text-align: center;
+}
+
+.home2-skill-icon {
+  font-size: 4rem;
+}
+
+.home2-skill-title {
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+}
+
+.home2-about-skills-title {
+  font-family: "Krona One", "Inter", Arial, sans-serif;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .home2-projects-section-wrapper {
@@ -275,12 +329,26 @@
   margin-bottom: 0.2rem;
 }
 
+@media (max-width: 1200px) {
+  .home2-skill-title {
+    font-size: 0.8rem;
+  }
+}
 @media (max-width: 1024px) {
   .first-name {
     font-size: 4rem;
   }
   .last-name {
     font-size: 4rem;
+  }
+  .home2-skill-icon {
+    font-size: 3rem;
+  }
+  .home2-skill-title {
+    font-size: 1rem;
+  }
+  .home2-about-all-skills {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 @media (max-width: 767px) {
@@ -297,7 +365,46 @@
     width: 70%;
   }
   .home2-nav {
-    font-size: 0.7rem;
+    justify-content: space-between;
+  }
+  .collapse-button-container {
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+  }
+  .nav-logo {
+    font-size: 1rem;
+    padding-left: 2rem;
+  }
+  .nav-links {
+    position: fixed;
+    flex-direction: column;
+    right: -100%;
+    top: 8rem;
+    background-color: #111111;
+    width: 50%;
+    height: 100%;
+    transition: 500ms ease-out;
+    justify-content: flex-start;
+    padding-top: 2rem;
+  }
+  .home2-about-all-skills {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .home2-skill-icon {
+    font-size: 2.5rem;
+  }
+  .home2-skill-title {
+    font-size: 0.9rem;
+  }
+  .home2-about-desc {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    width: 6100%;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
   }
 }
 

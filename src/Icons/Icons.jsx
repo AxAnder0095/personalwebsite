@@ -14,6 +14,8 @@ import { GiCampCookingPot } from "react-icons/gi";
 import { GiWeightLiftingUp } from "react-icons/gi";
 import { IoLogoGameControllerB } from "react-icons/io";
 
+import { FaFigma } from "react-icons/fa";
+
 
 export const Icons = {
     reactIcon: <FaReact />,
@@ -31,6 +33,8 @@ export const Icons = {
     cookingIcon: <GiCampCookingPot/>,
     weightIcon: <GiWeightLiftingUp/>,
     gamingIcon: <IoLogoGameControllerB/>,
+
+    figmaIcon: <FaFigma />
 
 
 

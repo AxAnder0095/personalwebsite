@@ -1,13 +1,29 @@
-import {useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 import {Link} from "react-router-dom";
 import './Home2Styles.sass'
 import weatherImage from '../imgs/weatherapp.png'
 import aniImage from '../imgs/animations.png'
 import cactImage from '../imgs/cactpot.png'
 import portImg from '../imgs/port2.png'
+import { RxHamburgerMenu } from "react-icons/rx";
+import {Icons} from "../Icons/Icons.jsx";
 
 
 function Home2() {
+    const [showLinks, setShowLinks] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth > 767){
+                setShowLinks(false);
+            }
+        }
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {window.removeEventListener('resize', handleResize);}
+    }, [])
+
     const projRef = useRef(null);
     const aboutRef = useRef(null);
 
@@ -16,8 +32,10 @@ function Home2() {
     }
 
     const handleAbout = () => {
-        aboutRef.current?.scrollIntoView({behavior: 'smooth'})
+        aboutRef.current?.scrollIntoView({behavior: 'smooth', block: "start"})
     }
+
+
 
     return (
         <>
@@ -30,11 +48,14 @@ function Home2() {
                                   <div className={'nav-logo'}>
                                       <Link className={'nav-link'} to={'https://github.com/AxAnder0095'}>AX</Link>
                                   </div>
-                                  <div className={'nav-links'}>
+                                  <div className={'nav-links'} id={showLinks ? 'hidden' : ''}>
                                       <Link className={'nav-link'} to={'/'} onClick={handleAbout}>ABOUT</Link>
                                       <Link className={'nav-link'} to={'/'} onClick={handleProj}>PROJECTS</Link>
                                       <Link className={'nav-link'} to={'https://github.com/AxAnder0095'}>GITHUB</Link>
                                       <Link className={'nav-link'} to={'https://www.linkedin.com/in/alexander-brown-543337216/'}>LINKEDIN</Link>
+                                  </div>
+                                  <div className={'collapse-button-container'}>
+                                      <button className={'collapse-button'} onClick={() => setShowLinks(!showLinks)}><RxHamburgerMenu/></button>
                                   </div>
                               </nav>
                           </header>
@@ -55,9 +76,49 @@ function Home2() {
                                       <p className={'home2-about-title'}>ABOUT</p>
                                       <div className={'home2-about-desc-wrapper'}>
                                           <p className={'home2-about-desc'}>Graduate from Aurora University that has a passion for Front end
-                                              Development. On my free time I enjoy weight training and cooking
+                                              Development. On my free time I enjoy weight training, cooking and gaming
                                               but my favorite thing to do is learn new Front End skills to better
-                                              myself as a Developer.</p>
+                                              myself as a Developer.
+                                          </p>
+                                      </div>
+                                      <div className={'home2-about-skills'}>
+                                          <div className={'home2-about-skills-wrapper'}>
+                                              <p className={'home2-about-skills-title'}>Skill set</p>
+                                              <div className={'home2-about-all-skills'}>
+                                                  <div>
+                                                      <div className={'home2-skill-icon'}>{Icons.reactIcon}</div>
+                                                      <p className={'home2-skill-title'}>React</p>
+                                                  </div>
+                                                  <div>
+                                                      <div className={'home2-skill-icon'}>{Icons.jsIcon}</div>
+                                                      <p className={'home2-skill-title'}>Javascript</p>
+                                                  </div>
+                                                  <div>
+                                                      <div className={'home2-skill-icon'}>{Icons.htmlIcon}</div>
+                                                      <p className={'home2-skill-title'}>HTML</p>
+                                                  </div>
+                                                  <div>
+                                                      <div className={'home2-skill-icon'}>{Icons.cssIcon}</div>
+                                                      <p className={'home2-skill-title'}>CSS</p>
+                                                  </div>
+                                                  <div>
+                                                      <div className={'home2-skill-icon'}>{Icons.figmaIcon}</div>
+                                                      <p className={'home2-skill-title'}>Figma</p>
+                                                  </div>
+                                                  <div>
+                                                      <div className={'home2-skill-icon'}>{Icons.javaIcon}</div>
+                                                      <p className={'home2-skill-title'}>Java</p>
+                                                  </div>
+                                                  <div>
+                                                      <div className={'home2-skill-icon'}>{Icons.csharpIcon}</div>
+                                                      <p className={'home2-skill-title'}>C Sharp</p>
+                                                  </div>
+                                                  <div>
+                                                      <div className={'home2-skill-icon'}>{Icons.sqlIcon}</div>
+                                                      <p className={'home2-skill-title'}>SQL</p>
+                                                  </div>
+                                              </div>
+                                          </div>
                                       </div>
                                   </div>
                               </section>
