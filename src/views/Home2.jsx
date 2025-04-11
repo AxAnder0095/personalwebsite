@@ -28,10 +28,12 @@ function Home2() {
     const aboutRef = useRef(null);
 
     const handleProj = () => {
+        setShowLinks(false);
         projRef.current?.scrollIntoView({behavior: 'smooth', block: "start"})
     }
 
     const handleAbout = () => {
+        setShowLinks(false);
         aboutRef.current?.scrollIntoView({behavior: 'smooth', block: "start"})
     }
 
