@@ -9,6 +9,7 @@ import { TbBrandCSharp } from "react-icons/tb";
 import { FaPython } from "react-icons/fa";
 import { SiCplusplus } from "react-icons/si";
 import { DiMysql } from "react-icons/di";
+import { IoLogoFirebase } from "react-icons/io5";
 
 import { GiCampCookingPot } from "react-icons/gi";
 import { GiWeightLiftingUp } from "react-icons/gi";
@@ -34,7 +35,9 @@ export const Icons = {
     weightIcon: <GiWeightLiftingUp/>,
     gamingIcon: <IoLogoGameControllerB/>,
 
-    figmaIcon: <FaFigma />
+    figmaIcon: <FaFigma />,
+
+    firebaseIcon: <IoLogoFirebase/>
 
 
 

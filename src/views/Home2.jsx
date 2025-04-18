@@ -5,6 +5,7 @@ import weatherImage from '../imgs/weatherapp.png'
 import aniImage from '../imgs/animations.png'
 import cactImage from '../imgs/cactpot.png'
 import portImg from '../imgs/port2.png'
+import expenseT from '../imgs/expenseTrackerApp.png'
 import { RxHamburgerMenu } from "react-icons/rx";
 import {Icons} from "../Icons/Icons.jsx";
 
@@ -104,6 +105,10 @@ function Home2() {
                                                       <p className={'home2-skill-title'}>CSS</p>
                                                   </div>
                                                   <div>
+                                                      <div className={'home2-skill-icon'}>{Icons.firebaseIcon}</div>
+                                                      <p className={'home2-skill-title'}>Firebase</p>
+                                                  </div>
+                                                  <div>
                                                       <div className={'home2-skill-icon'}>{Icons.figmaIcon}</div>
                                                       <p className={'home2-skill-title'}>Figma</p>
                                                   </div>
@@ -130,28 +135,16 @@ function Home2() {
                                       <p className={'home2-projects-title'}>PROJECTS</p>
                                       <div className={'home2-projects-grid'}>
                                           <div className={'home2-projects-left'}>
-                                              <Link to={'https://github.com/AxAnder0095/personalwebsite'} className={'home2-project-link'}>
+                                              <Link to={'https://github.com/AxAnder0095/expenseapp/tree/master'} className={'home2-project-link'}>
                                                   <div className={'picture-box'}>
-                                                      <img src={portImg} alt={'some image'}/>
+                                                      <img src={expenseT} alt={'weather app image'}/>
                                                   </div>
                                                   <div className={'text-box'}>
-                                                      <p className={'home2-project-title'}>Portfolio</p>
-                                                      <p className={'home2-project-desc'}>My third portfolio website with
-                                                      improvements to responsiveness. Used Figma for initial design</p>
+                                                      <p className={'home2-project-title'}>Budget App</p>
+                                                      <p className={'home2-project-desc'}>Expense tracker that used Firebase Auth and Firestore
+                                                      for backend handling. Enter your balance and the amount you would like to budget.</p>
                                                   </div>
                                               </Link>
-                                              <Link to={'https://github.com/AxAnder0095/Mini-Cacptot-Game'} className={'home2-project-link'}>
-                                                  <div className={'picture-box'}>
-                                                      <img src={cactImage} alt={'scratch off game image'}/>
-                                                  </div>
-                                                  <div className={'text-box'}>
-                                                      <p className={'home2-project-title'}>Mini Cactpot</p>
-                                                      <p className={'home2-project-desc'}>Scratch off mini game from the
-                                                      MMO RPG Final Fantasy 14.</p>
-                                                  </div>
-                                              </Link>
-                                          </div>
-                                          <div className={'home2-projects-right'}>
                                               <Link to={'https://github.com/AxAnder0095/weatherapp'} className={'home2-project-link'}>
                                                   <div className={'picture-box'}>
                                                       <img src={weatherImage} alt={'weather app image'}/>
@@ -159,7 +152,7 @@ function Home2() {
                                                   <div className={'text-box'}>
                                                       <p className={'home2-project-title'}>Weather App</p>
                                                       <p className={'home2-project-desc'}>enter your city name
-                                                      to get current weather conditions in your area.</p>
+                                                          to get current weather conditions in your area.</p>
                                                   </div>
                                               </Link>
                                               <Link to={'https://animations-feb82.web.app'} className={'home2-project-link'}>
@@ -169,7 +162,29 @@ function Home2() {
                                                   <div className={'text-box'}>
                                                       <p className={'home2-project-title'}>Animations</p>
                                                       <p className={'home2-project-desc'}>Website where I work on
-                                                      animations with CSS and Javascript</p>
+                                                          animations with CSS and Javascript</p>
+                                                  </div>
+                                              </Link>
+                                          </div>
+                                          <div className={'home2-projects-right'}>
+                                              <Link to={'https://github.com/AxAnder0095/personalwebsite'} className={'home2-project-link'}>
+                                                  <div className={'picture-box'}>
+                                                      <img src={portImg} alt={'some image'}/>
+                                                  </div>
+                                                  <div className={'text-box'}>
+                                                      <p className={'home2-project-title'}>Portfolio</p>
+                                                      <p className={'home2-project-desc'}>My third portfolio website with
+                                                          improvements to responsiveness. Used Figma for initial design</p>
+                                                  </div>
+                                              </Link>
+                                              <Link to={'https://github.com/AxAnder0095/Mini-Cacptot-Game'} className={'home2-project-link'}>
+                                                  <div className={'picture-box'}>
+                                                      <img src={cactImage} alt={'scratch off game image'}/>
+                                                  </div>
+                                                  <div className={'text-box'}>
+                                                      <p className={'home2-project-title'}>Mini Cactpot</p>
+                                                      <p className={'home2-project-desc'}>Scratch off mini game from the
+                                                          MMO RPG Final Fantasy 14.</p>
                                                   </div>
                                               </Link>
                                           </div>
