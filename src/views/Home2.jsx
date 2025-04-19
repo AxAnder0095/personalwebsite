@@ -78,11 +78,9 @@ function Home2() {
                                   <div>
                                       <p className={'home2-about-title'}>ABOUT</p>
                                       <div className={'home2-about-desc-wrapper'}>
-                                          <p className={'home2-about-desc'}>Graduate from Aurora University that has a passion for Front end
-                                              Development. On my free time I enjoy weight training, cooking and gaming
-                                              but my favorite thing to do is learn new Front End skills to better
-                                              myself as a Developer.
-                                          </p>
+                                          <p className={'home2-about-desc'}>I'm a graduate of Aurora University with a strong
+                                          passion for front-end development. When I'm not coding, you'll usually find me weight training, cooking or gaming.
+                                          But what i enjoy the most is diving into new front-end skills and constantly improving as a developer.</p>
                                       </div>
                                       <div className={'home2-about-skills'}>
                                           <div className={'home2-about-skills-wrapper'}>
@@ -141,8 +139,9 @@ function Home2() {
                                                   </div>
                                                   <div className={'text-box'}>
                                                       <p className={'home2-project-title'}>Budget App</p>
-                                                      <p className={'home2-project-desc'}>Expense tracker that used Firebase Auth and Firestore
-                                                      for backend handling. Enter your balance and the amount you would like to budget.</p>
+                                                      <p className={'home2-project-desc'}>An expense tracker built with Firebase Auth and Firestore, featuring
+                                                       secure user authentication, real-time data updates, and persistent budget tracking. Users can enter
+                                                      their balance, set a monthly budget and easily monitor their spending over time. </p>
                                                   </div>
                                               </Link>
                                               <Link to={'https://github.com/AxAnder0095/weatherapp'} className={'home2-project-link'}>
@@ -151,8 +150,8 @@ function Home2() {
                                                   </div>
                                                   <div className={'text-box'}>
                                                       <p className={'home2-project-title'}>Weather App</p>
-                                                      <p className={'home2-project-desc'}>enter your city name
-                                                          to get current weather conditions in your area.</p>
+                                                      <p className={'home2-project-desc'}>A weather app that will retrieve a real-time day forecast along
+                                                      side an 8 day forecast showcasing the weather throughout the week. </p>
                                                   </div>
                                               </Link>
                                               <Link to={'https://animations-feb82.web.app'} className={'home2-project-link'}>
@@ -161,8 +160,8 @@ function Home2() {
                                                   </div>
                                                   <div className={'text-box'}>
                                                       <p className={'home2-project-title'}>Animations</p>
-                                                      <p className={'home2-project-desc'}>Website where I work on
-                                                          animations with CSS and Javascript</p>
+                                                      <p className={'home2-project-desc'}>A responsive website that highlights custom-built CSS animations for
+                                                      UI elements and effects. Focus on reusable code and a modular design</p>
                                                   </div>
                                               </Link>
                                           </div>
@@ -173,8 +172,7 @@ function Home2() {
                                                   </div>
                                                   <div className={'text-box'}>
                                                       <p className={'home2-project-title'}>Portfolio</p>
-                                                      <p className={'home2-project-desc'}>My third portfolio website with
-                                                          improvements to responsiveness. Used Figma for initial design</p>
+                                                      <p className={'home2-project-desc'}>Third portfolio design with a focus on minimalism and page responsiveness. </p>
                                                   </div>
                                               </Link>
                                               <Link to={'https://github.com/AxAnder0095/Mini-Cacptot-Game'} className={'home2-project-link'}>
